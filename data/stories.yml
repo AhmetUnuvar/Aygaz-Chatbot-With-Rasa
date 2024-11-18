@@ -1,0 +1,42 @@
+version: "3.1"
+stories:
+  - story: user chooses to read the privacy notice
+    steps:
+      - intent: greet
+      - action: kullanici_adi_form
+      - active_loop: kullanici_adi_form
+      - slot_was_set:
+          - requested_slot: inform_text
+      - slot_was_set:
+          - inform_text: "evet okumak istiyorum"
+      - slot_was_set:
+          - requested_slot: full_name
+      - slot_was_set:
+          - full_name: "Can Yılmaz"
+      - slot_was_set:
+          - requested_slot: address
+      - slot_was_set:
+          - address: "Konya"
+      - slot_was_set:
+          - requested_slot: address_confirmation
+      - slot_was_set:
+          - address_confirmation: "evet"
+      - slot_was_set:
+          - requested_slot: repeat_order
+      - slot_was_set:
+          - repeat_order: "tekrarla"
+      - slot_was_set:
+          - requested_slot: product_names
+      - slot_was_set:
+          - product_names: "x"
+      - slot_was_set:
+          - requested_slot: product_quantity
+      - slot_was_set:
+          - product_quantity: "10"
+      - slot_was_set:
+          - requested_slot: confirm_order
+      - slot_was_set:
+          - confirm_order: "onaylıyorum"
+      - slot_was_set:
+          - requested_slot: null
+      - active_loop: null

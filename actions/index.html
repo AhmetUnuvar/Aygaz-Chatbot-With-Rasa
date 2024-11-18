@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot Arayüzü</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="chat-container">
+      <header class="chat-header">
+        <h2>Aygaz Chatbot</h2>
+      </header>
+      <div class="chat-box" id="chat-box">
+        <div class="message bot-message">
+          Merhaba! Size nasıl yardımcı olabilirim?
+        </div>
+      </div>
+      <form id="chat-form">
+        <input
+          type="text"
+          id="user-input"
+          placeholder="Mesajınızı yazın..."
+          autocomplete="off"
+          required
+        />
+        <button type="submit">Gönder</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

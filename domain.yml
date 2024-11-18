@@ -1,0 +1,174 @@
+version: "3.1"
+
+intents:
+  - greet
+  - choose_option_evet
+  - choose_option_hayır
+  - provide_name
+  - choose_option_repeat
+  - check_name
+  - names
+  - cities
+  - products
+  - surnames
+  - confirm_yes
+  - deny_no
+  - siparistekrar
+  - siparisadet
+  - confirm
+
+slots:
+  inform_text:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: kullanici_adi_form
+            requested_slot: inform_text
+
+  full_name:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: kullanici_adi_form
+            requested_slot: full_name
+
+  address:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: kullanici_adi_form
+            requested_slot: address
+
+  address_confirmation:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: kullanici_adi_form
+            requested_slot: address_confirmation
+
+  repeat_order:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: kullanici_adi_form
+            requested_slot: repeat_order
+
+  product_names:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: kullanici_adi_form
+            requested_slot: product_names
+
+  product_quantity:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: kullanici_adi_form
+            requested_slot: product_quantity
+
+  confirm_order:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: kullanici_adi_form
+            requested_slot: confirm_order
+
+  end_flag:
+    type: bool
+    influence_conversation: false
+    mappings:
+      - type: custom
+
+  redirect:
+    type: bool
+    influence_conversation: false
+    mappings:
+      - type: custom
+
+# form
+forms:
+  kullanici_adi_form:
+    required_slots:
+      - inform_text
+      - full_name
+      - address
+      - address_confirmation
+      - repeat_order
+      - product_names
+      - product_quantity
+      - confirm_order
+
+responses:
+  utter_greet:
+    - text: "Merhaba. Kişisel verilerinizin Aygaz A.Ş. tarafından işlenmesine yönelik aydınlatma metnini okumak istiyorsanız (evet okumak istiyorum), okumak istemiyorsanız (hayır okumak istemiyorum) yazınız."
+
+  utter_light_text:
+    - text: "Aydınlatma metni aydınlatma metni aydınlatma metni"
+
+  utter_skip_privacy_notice:
+    - text: "Gizlilik politikasını atlıyorsunuz. İleriye devam edelim."
+
+  # form soruları
+  utter_ask_inform_text:
+    - text: "Merhaba. Kişisel verilerinizin Aygaz A.Ş. tarafından işlenmesine yönelik aydınlatma metnini okumak istiyorsanız (evet okumak istiyorum), okumak istemiyorsanız (hayır okumak istemiyorum) yazınız."
+      buttons:
+        - title: "evet okumak istiyorum"
+          payload: "/choose_option_evet"
+        - title: "hayır okumak istemiyorum"
+          payload: "/choose_option_hayır"
+  utter_ask_full_name:
+    - text: "Lütfen adınızı ve soyadınızı giriniz:"
+
+  utter_ask_address_confirmation:
+    - text: "Bu adresten devam etmek istiyor musunuz? Lütfen 'evet' veya 'hayır' ile yanıtlayın."
+      buttons:
+        - title: "evet"
+          payload: "/confirm_yes"
+        - title: "hayır"
+          payload: "/deny_no"
+
+  utter_ask_repeat_order:
+    - text: "En son siparişinizi tekrarlamak istiyor musunuz? 'tekrarla' veya 'yeni sipariş' ile yanıtlayın."
+
+  utter_ask_product_names:
+    - text: "Lütfen sipariş etmek istediğiniz ürünü seçiniz: x ürünü için 'x', y ürünü için 'y', z ürünü için 'z'."
+
+  utter_ask_product_quantity:
+    - text: "Lütfen istediğiniz ürün miktarını belirtiniz."
+
+  utter_ask_confirm_order:
+    - text: "Siparişinizi onaylıyor musunuz? 'onaylıyorum' veya 'onaylamıyorum' ile yanıtlayın."
+
+  utter_goodbye:
+    - text: "Bizi tercih ettiğiniz için teşekkürler"
+
+  # form soruları bitti
+  utter_order_repeat:
+    - text: "Siparişinizi tekrar ediyoruz. Bizi tercih ettiğiniz için teşekkürler."
+
+  utter_repeat_order_choice:
+    - text: "En son sipariş verdiğiniz ürünü tekrarlamak ister misiniz? (tekrarla)"
+
+actions:
+  - validate_kullanici_adi_form
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

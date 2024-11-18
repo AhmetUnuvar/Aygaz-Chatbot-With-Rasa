@@ -1,0 +1,15 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taS2NhYA6dwbhQ==": "utter_greet",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpbhMiAUAQvc0lw==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQMAVyRn5+cWp8fkFYFWpZSADYwHPHFPg": "utter_light_text",
+    "eJydjlEKgCAQBa/iATqBV4lYJB4lmCvrFoF496T6DIr+3oNhmL7UzpQk2MiN6jlaU65B0S2w5j7BZ0Vs7JohjfGxXbVmEkDri2NVhdCF/jO8VIwzcwZxOilsX5OCn2Ylxf7Q9eQcDqg7dIw=": "kullanici_adi_form",
+    "eJydjlEKwjAQRK+SA3iCXEVkCXFtF7fZkGyCEHp3o/Gz2uLfDDzezLmtJ9NiwgrOK0mwpo0AwS1ozacwZcXQ2ZIxdYZCr2rNlBB13XEUVUww0P8MOy/8LJIRJL4prEcvMU2zguJj49cX58tSEVgkdnjI7oXZBfIE7kpwk7R08sf4Jn9g/vIEfQKlTw==": "validate_kullanici_adi_form",
+    "eJy9jlEKwjAMhq/SA3iCXUUklC5uwawpbVqEsrtbrY/TyR58S+Dj+79zXU+mhogFrFMSP5jaD/B2wcG8H6ak6BubE8bGkG+vDmaKiLruOLIqRujoMcNOhZtFEoKEF4Xl1ySmaVZQvG90fXA+LQWBRUKDu+yWma0nR2BHgqvEpZFfxjf5/80XyzRaRTjacXkAI3bZuw==": "validate_kullanici_adi_form",
+    "eJzVjlEKwjAMhq/SA3iCXkUklC5uwawZbVqEsrtbrY/TiQ+Cbwl8fP93rOvB1CViAeeVJFhT+wHBzWjN82FKiqGxOWFsDIX2qjVjRNR1x5FVMUJHvzPsVPhJJCHI8qCwfJrENE4KiteNrhfOu6UgsMjS4C67ZGYXyBO4geAscW7km/FN/nfzxTENThH+veN0A6TfDjY=": "validate_kullanici_adi_form",
+    "eJztjkEKwjAQRa+SA3iCXEVkCOnYDqaZkEyCEHp3Y+OyWhFx5W4GHu+/Y10OqoaIBYwVYq9V7Qd4M6NWj8dREvSNzQljY8i3V7QaI6IsO44sghE6+plhp8JOzAmBw0pheTfJ0TgJCF43up4475aC4JhDg7vskp0zniyBGQjOHOdGvhjf5H83X4yjwQjCv+M7HacbAVtCog==": "utter_redirect_to_customer_service",
+    "eJztklEKwjAMQK/SA3iCXUUklC5uwbYZbVqEsbsbrZ/TDT/ED/+a8nh5HznOy8HMU8IK1glx7MzcHhBtwM48B09ZMCpbMiZlKOoonRkSoiwbjiKCCRr6mWGjwo3MGYGnB4V1b5KnYRQQvK50vXDeLRXBM08KN9mleG8jOQLbE5w5BSXfLF/lv7e+Wk+9FYR/x091tJtM2FNCp2fJ4EoWDvqpDZUc7ss53QCiZ3pR": "action_listen",
+    "eJydjlEKwjAQBa+SA3iCXEVkCfHZLqa7JdkUIfTuBttPodW/92AY5trWi2tzxkIhGqt417ZBEiZ4t5/ExSCdrQW5Myz9mndDBmw9cFQzZNrQ/wwHFXFULSCdPxSWs0mJh9HI8PrS9bvzWVMKwpEp3Jkemqdz1tsbWq6VxQ==": "action_listen"
+  }
+}

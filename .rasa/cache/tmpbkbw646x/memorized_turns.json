@@ -1,0 +1,10 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taS2NhYA6dwbhQ==": "utter_greet",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpbhMiAUAQvc0lw==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQMAVyRn5+cWp8fkFYFWpZSADYwHPHFPg": "utter_light_text",
+    "eJydjlEKgCAQBa/iATqBV4lYJB4lmCvrFoF496T6DIr+3oNhmL7UzpQk2MiN6jlaU65B0S2w5j7BZ0Vs7JohjfGxXbVmEkDri2NVhdCF/jO8VIwzcwZxOilsX5OCn2Ylxf7Q9eQcDqg7dIw=": "kullanici_adi_form",
+    "eJydjlEKwyAQRK/iAUppf71KCIvoNllq3KBrKEjuXhvzWUjav5nlzex0Zb2oMkdcwFghDlqVJiCYCbXajackGCqbE8bKUKhWtBoioqwHHVkEIzT0v4aDFXZkTgg8bxQuZyd5GkYBwdeXXb93PrP3JpAlMI7gwXGqgeRZ0od0LmKqqrtfb337tue2y7kB/Rtb7KPL": "action_listen"
+  }
+}

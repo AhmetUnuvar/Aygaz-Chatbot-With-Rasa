@@ -1,0 +1,81 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - merhaba
+      - selam
+      - hey
+      - nasılsınız?
+      - selamlar
+
+  - intent: choose_option_evet
+    examples: |
+      - evet okumak istiyorum
+
+  - intent: choose_option_hayır
+    examples: |
+      - hayır okumak istemiyorum
+
+  - intent: names
+    examples: |
+      - Ahmet 
+      - Tarık 
+      - Emre 
+      - Osman
+      - Can
+      - Ali
+      - Fatma
+
+  - intent: surnames
+    examples: |
+      - Ünüvar
+      - Yılmaz
+      - Çetin
+      - Demir
+      - Koç
+      - Aydın
+
+  - intent: cities
+    examples: |
+      - Konya
+      - Ankara
+      - İstanbul
+      - İzmir
+      - Bursa
+      - Adana
+
+  - intent: products
+    examples: |
+      - x
+      - y
+      - z
+      - ürün a
+      - ürün b
+      - ürün c
+
+  - intent: confirm_yes
+    examples: |
+      - evet
+  - intent: deny_no
+    examples: |
+      - hayır
+
+  - intent: siparistekrar
+    examples: |
+      - tekrarla
+      - yeni sipariş
+
+  - intent: siparisadet
+    examples: |
+      - 1
+      - 2
+      - 3 
+      - 40
+      - 100
+      - 1000
+
+  - intent: confirm
+    examples: |
+      - onaylıyorum
+      - onaylamıyorum
